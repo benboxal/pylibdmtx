@@ -44,7 +44,7 @@ def load():
         # Assume a shared library on the path
         path = find_library('dmtx')
         if not path:
-            raise ImportError('Unable to find dmtx shared library')
+            raise ImportError('Unable to find dmtx shared library TEST')
         libdmtx = cdll.LoadLibrary(path)
 
     return libdmtx
